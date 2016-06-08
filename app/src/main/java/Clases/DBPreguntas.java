@@ -13,7 +13,7 @@ import java.util.ArrayList;
 
 public class DBPreguntas extends SQLiteAssetHelper {
 
-    private static final String DB_NAME = "base.db";
+    private static final String DB_NAME = "yvqs.db";
     private static final int SCHEME_VERSION = 1;
     private SQLiteDatabase db;
 
