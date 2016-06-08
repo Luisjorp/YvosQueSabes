@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/fondo3"
+    tools:context="yvqs.app.novatek.com.yvosquesabes.MenuActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/primary"
+        android:elevation="@dimen/elevacion_6nivel">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:src="@drawable/logo"
+            android:scaleType="fitCenter"
+            android:id="@+id/imageView"
+            android:paddingLeft="10dp"
+            android:layout_marginEnd="400dp"
+            />
+
+        <TextView
+            android:id="@+id/titulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Y vos ¿Qué sabés?"
+            android:textSize="40dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="75dp"
+            android:gravity="center_horizontal"
+            android:padding="@dimen/espaciado_interno"
+            android:layout_alignParentStart="true"
+            android:textColor="@color/icons"
+            />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/contenido"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Instrucciones"
+        android:textAlignment="center"
+        android:padding="@dimen/espaciado_interno"
+        android:linksClickable="true"
+        android:background="@color/icons"
+        android:elevation="@dimen/elevacion_4nivel"
+        android:textSize="30sp"
+        />
+
+    <ImageView
+        android:layout_width="400px"
+        android:layout_height="400px"
+        android:layout_marginTop="30dp"
+        android:id="@+id/imagevuewPrueba"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/animacion"
+        android:onClick="mostrarCategoria"/>
+
+
+</LinearLayout>

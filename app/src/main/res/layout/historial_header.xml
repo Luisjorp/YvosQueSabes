@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:text="historial"
+        android:textColor="@color/icons"
+        android:textAlignment="center"
+        android:textSize="@dimen/Titulos"
+        android:background="@color/deportes"
+        android:elevation="@dimen/elevacion_5nivel"/>
+
+    <LinearLayout
+        android:layout_marginTop="2dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+    <TextView
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:text="Fecha"
+        android:textAlignment="center"
+        android:textColor="@color/primary_light"
+        android:textSize="@dimen/Pregunta"
+        android:background="@color/primary"
+        android:elevation="@dimen/elevacion_5nivel"/>
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Hora"
+            android:textAlignment="center"
+            android:textColor="@color/primary_light"
+            android:textSize="@dimen/Pregunta"
+            android:background="@color/primary"
+            android:elevation="@dimen/elevacion_5nivel"/>
+
+        <TextView
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:text="Calificación"
+            android:textAlignment="center"
+            android:textColor="@color/primary_light"
+            android:textSize="@dimen/Pregunta"
+            android:background="@color/primary"
+            android:elevation="@dimen/elevacion_5nivel"/>
+
+    </LinearLayout>
+
+</LinearLayout>

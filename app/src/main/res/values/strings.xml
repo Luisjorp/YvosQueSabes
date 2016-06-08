@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">Y Vos ¿Qué sabés?</string>
+    <string name="title_activity_main">MainActivity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="Instrucciones">INSTRUCCIONES: Responde a la
+                                pregunta que marcará la flecha roja
+                                en la Chapin-Ruleta.</string>
+
+    <string name="Compartir">Y vos ¿Qué tanto sabés de Guate? Poné a prueba tus conocimientos
+                            en Geografía, Deportes, Historia y Entretenimiento con la nueva
+                            aplicación tipo trivia llamada Y Vos ¿Qué sabés?. Descargala desde
+                            la PlayStore y diviertete a lo grande.</string>
+    <string name="respuesta_1">Respuesta 1</string>
+    <string name="respuesta_2">Respuesta 2</string>
+    <string name="respuesta_3">Respuesta 3</string>
+    <string name="respuesta_4">Respuesta 4</string>
+    <string name="aqui_es_donde_iran_las_preguntas">Aqui es donde iran las preguntas</string>
+    <string name="label_de_categoria">Label de Categoria</string>
+    <string name="r_acertadas_0">R/ ACERTADAS: 0</string>
+    <string name="puntos_0">PUNTOS: 0</string>
+    <string name="logo_de_app">logo_de_app</string>
+    <string name="y_vos_qu_sab_s">Y vos ¿Qué sabés?</string>
+    <string name="ruleta">ruleta</string>
+    <string name="splashscreen">splashscreen</string>
+    <string name="resultado_obtenido">resultado obtenido</string>
+    <string name="resultado">Resultado</string>
+    <string name="aqui_ira_el_resultado">Aqui ira el resultado</string>
+    <string name="historial_de_registros">Historial de Registros</string>
+    <string name="compartir">Compartir</string>
+    <string name="reiniciar_test">Reiniciar Test</string>
+    <string name="comenzar">Comenzar</string>
+    <string name="tabla_de_resultados">Tabla de Resultados</string>
+</resources>

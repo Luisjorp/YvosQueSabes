@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/fondo3"
+    tools:context="yvqs.app.novatek.com.yvosquesabes.MenuActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/primary"
+    >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:src="@drawable/logo"
+            android:scaleType="fitCenter"
+            android:id="@+id/imageView"
+            android:layout_marginEnd="300dp"
+            android:contentDescription="@string/logo_de_app" />
+
+        <TextView
+            android:id="@+id/titulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/y_vos_qu_sab_s"
+            android:textSize="30sp"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="75dp"
+            android:gravity="center_horizontal"
+            android:padding="@dimen/espaciado_interno"
+            android:layout_alignParentStart="true"
+            android:textColor="@color/icons"
+            />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/contenido"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Instrucciones"
+        android:textAlignment="center"
+        android:padding="@dimen/espaciado_interno"
+        android:linksClickable="true"
+        android:background="@color/icons"
+        android:textSize="20sp"
+        />
+
+    <ImageView
+        android:layout_width="225dp"
+        android:layout_height="225dp"
+        android:layout_marginTop="25dp"
+        android:id="@+id/imagevuewPrueba"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/animacion"
+        android:onClick="mostrarCategoria"
+        android:contentDescription="@string/ruleta" />
+
+
+</LinearLayout>

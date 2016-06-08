@@ -1,0 +1,25 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="espaciado_interno">20dp</dimen>
+
+    <dimen name="elevacion_1nivel">1dp</dimen>
+    <dimen name="elevacion_2nivel">2dp</dimen>
+    <dimen name="elevacion_3nivel">3dp</dimen>
+    <dimen name="elevacion_4nivel">4dp</dimen>
+    <dimen name="elevacion_5nivel">6dp</dimen>
+    <dimen name="elevacion_6nivel">8dp</dimen>
+    <dimen name="elevacion_7nivel">9dp</dimen>
+    <dimen name="elevacion_8nivel">12dp</dimen>
+
+    <dimen name="Titulos">45sp</dimen>
+    <dimen name="Pregunta">18sp</dimen>
+    <dimen name="Respuestas">15sp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="nav_header_vertical_spacing">16dp</dimen>
+    <dimen name="nav_header_height">160dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+
+</resources>

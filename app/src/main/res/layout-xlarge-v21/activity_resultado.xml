@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view= "http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/win">
+
+
+
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardViewPrueba2"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:padding="@dimen/activity_horizontal_margin"
+        card_view:cardBackgroundColor="#ffffff"
+        card_view:cardCornerRadius="15dp"
+        android:elevation="@dimen/elevacion_5nivel"
+
+        >
+
+
+        <RelativeLayout
+            android:id="@+id/linear2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:src="@drawable/header"
+                android:scaleType="center"
+                android:id="@+id/imageView2"
+                android:contentDescription="@string/resultado_obtenido"
+
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/resultado"
+                android:id="@+id/Resultado"
+                android:textColor="@android:color/holo_blue_dark"
+                android:gravity="center"
+                android:textSize="90sp"
+                android:layout_alignBottom="@+id/imageView2"
+                android:layout_alignParentStart="true"
+                android:elevation="2dp"
+
+                />
+
+            <TextView
+                android:id="@+id/calificacionfinal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/aqui_ira_el_resultado"
+                android:textSize="35sp"
+                android:textColor="@color/secondary_text"
+                android:paddingTop="7dp"
+                android:paddingStart="@dimen/espaciado_interno"
+                android:paddingEnd="20dp"
+                android:gravity="center|center_vertical"
+                android:layout_below="@+id/imageView2"
+                android:layout_alignParentStart="true" />
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+
+    <Button
+        android:id="@+id/btnHistorial"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableStart="@android:drawable/arrow_down_float"
+        android:text="@string/historial_de_registros"
+        android:textSize="35sp"
+        android:layout_centerInParent="true"
+       style="@style/btnStyleOpcion"
+        android:layout_marginTop="5dp"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:layout_centerHorizontal="true"
+        android:elevation="@dimen/elevacion_5nivel"
+
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/compartir"
+        android:textSize="35sp"
+        android:id="@+id/btnShareResultado"
+        android:drawableStart="@android:drawable/ic_menu_share"
+        android:layout_alignParentBottom="true"
+        style="@style/btnStyleAzul"
+        android:onClick="btnShareResultado"
+        android:elevation="@dimen/elevacion_5nivel"
+        />
+
+    <Button
+        android:id="@+id/btnReiniciar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/reiniciar_test"
+        android:drawableStart="@android:drawable/stat_notify_sync_noanim"
+        android:textSize="35sp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        style="@style/btnStyleNaranja"
+        android:layout_marginTop="5dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:elevation="@dimen/elevacion_5nivel"
+        />
+
+
+
+</RelativeLayout>
