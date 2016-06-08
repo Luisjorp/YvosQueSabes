@@ -49,14 +49,14 @@ public class Splash_Screen extends AppCompatActivity {
         SharedPreferences misPreferencias = getSharedPreferences("preferencias", Context.MODE_PRIVATE);
         SharedPreferences.Editor editor = misPreferencias.edit();
         editor.putBoolean("isLoad", valor);
-        editor.commit();
+        editor.apply();
 
     }
 
     private class ProcesoCarga extends AsyncTask<Void,Void,Void>{
 
         ProgressDialog dialog;
-        ArrayList<EPreguntas> preguntass = new ArrayList<EPreguntas>(Arrays.asList(
+        ArrayList<EPreguntas> preguntass = new ArrayList<>(Arrays.asList(
         //**********************************************************DEPORTES*******************************************************************************************
                 new EPreguntas("¿Cuál es el equipo que utiliza lunas en su escudo?","Xelajú M.C.","Municipal","Comunicaciones","Petapa","DEPORTES"),
                 new EPreguntas("¿En qué año Erick Barrondo ganó la medalla de plata en Juegos Olímpicos?","2012","2008","2006","2010","DEPORTES"),
@@ -167,10 +167,10 @@ public class Splash_Screen extends AppCompatActivity {
 
             for (int i=0; i<preguntass.size();i++){
 
-                EPreguntas preg = new EPreguntas();
-                preg = preguntass.get(i);
+                //EPreguntas preg = new EPreguntas();
+                //preg = preguntass.get(i);
 
-                helper.InsertarPreguntas(preg);
+                //helper.InsertarPreguntas(preg);
                 try {
                     Thread.sleep(500);
                 } catch (InterruptedException e) {

@@ -56,7 +56,7 @@ public class PrimeraActividad extends Activity {
                         waited += 100;
                     }
                     Intent intent = new Intent(PrimeraActividad.this,
-                            Splash_Screen.class);
+                            MainActivity.class);
                     intent.setFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
                     startActivity(intent);
                     PrimeraActividad.this.finish();

@@ -6,41 +6,23 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
+import com.readystatesoftware.sqliteasset.SQLiteAssetHelper;
+
 import java.util.ArrayList;
 
-/**
- * Created by Luis José on 19/04/2016.
- */
-public class DBPreguntas extends SQLiteOpenHelper {
+
+public class DBPreguntas extends SQLiteAssetHelper {
 
     private static final String DB_NAME = "examenDB";
     private static final int SCHEME_VERSION = 1;
     private SQLiteDatabase db;
+
 
     public DBPreguntas(Context context) {
         super(context, DB_NAME, null, SCHEME_VERSION);
         db = this.getWritableDatabase();
     }
 
-
-    private ContentValues generarValores(EPreguntas preguntas){
-
-        ContentValues valores = new ContentValues();
-        valores.put(EPreguntas.FIELD_PREGUNTA,preguntas.getPregunta());
-        valores.put(EPreguntas.FIELD_CORRECTA,preguntas.getCorrecta());
-        valores.put(EPreguntas.FIELD_OPC1,preguntas.getOpcion1());
-        valores.put(EPreguntas.FIELD_OPC2,preguntas.getOpcion2());
-        valores.put(EPreguntas.FIELD_OPC3,preguntas.getOpcion3());
-        valores.put(EPreguntas.FIELD_ESTADO,preguntas.getEstado());
-        return valores;
-
-    }
-
-    public void InsertarPreguntas(EPreguntas preguntas){
-
-        db.insert(EPreguntas.TABLE_NAME,null,generarValores(preguntas));
-
-    }
 
     public ArrayList<EPreguntas> getPregunta(String valor){
 
@@ -66,6 +48,7 @@ public class DBPreguntas extends SQLiteOpenHelper {
 
             }while(c.moveToNext());
         }
+        c.close();
 
         return preguntas;
     }
@@ -92,22 +75,9 @@ public class DBPreguntas extends SQLiteOpenHelper {
         String columnas[] = {EHistorial.FIELD_ID_HISTORIAL, EHistorial.FIELD_FECHA, EHistorial.FIELD_HORA,
                 EHistorial.FIELD_CALIFICACION};
 
-        Cursor c = db.query(EHistorial.TABLE_NAME, columnas,null, null, null, null, null);
-
-        return c;
+        //Cursor c = a lo de abajo
+        return db.query(EHistorial.TABLE_NAME, columnas,null, null, null, null, null);
     }
 
 
-
-    @Override
-    public void onCreate(SQLiteDatabase db) {
-
-        db.execSQL(EPreguntas.CREATE_DB_TABLE);
-        db.execSQL(EHistorial.CREATE_DB_TABLE);
-    }
-
-    @Override
-    public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
-
-    }
 }
